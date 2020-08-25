@@ -1,4 +1,5 @@
-<%--
+<%@ page import="cn.itcast.web.domain.User" %>
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: g2
   Date: 2020/8/25
@@ -12,7 +13,22 @@
 </head>
 <body>
 
-${3 > 4}
+<%
+    User user = new User();
+    user.setName("zhangsan");
+    user.setAge(23);
+    user.setBirthday( new Date());
+
+    request.setAttribute("u", user);
+%>
+
+${requestScope.u}<br>
+
+${requestScope.u.name}<br>
+${requestScope.u.age}<br>
+${requestScope.u.birthday}<br>
+${requestScope.u.birthday.month}<br>
+${u.birStr}<br>
 
 </body>
 </html>
