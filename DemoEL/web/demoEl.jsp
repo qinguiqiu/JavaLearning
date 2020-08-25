@@ -13,6 +13,9 @@
 </head>
 <body>
 
+
+
+
 <%
     User user = new User();
     user.setName("zhangsan");
@@ -29,6 +32,10 @@ ${requestScope.u.age}<br>
 ${requestScope.u.birthday}<br>
 ${requestScope.u.birthday.month}<br>
 ${u.birStr}<br>
+
+
+${pageContext.request}<br>
+${pageContext.request.contextPath}<br>//虚拟目录
 
 </body>
 </html>
