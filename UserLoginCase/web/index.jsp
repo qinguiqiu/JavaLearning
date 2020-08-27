@@ -23,7 +23,7 @@
 <body>
 <div align="center">
   <a
-    href="${pageContext.request.contextPath}/userListServlet" style="text-align: center">查询所有用户信息
+    href="${pageContext.request.contextPath}/userListServlet" style="text-align: center; font-size: 25px">查询所有用户信息
   </a>
 </div>
 </body>
