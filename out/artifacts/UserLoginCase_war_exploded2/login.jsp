@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -18,11 +19,10 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="text/javascript">
-        function refreshCode() {
-            var vcode = document.getElementById("vcode");
-            vcode.src = "${pageContext.request.contextPath}/checkCode?"+new Date().getTime();
-        }
-
+        <%--function refreshCode() {--%>
+        <%--    var vcode = document.getElementById("vcode");--%>
+        <%--    vcode.src = "${pageContext.request.contextPath}/checkCode?"+new Date().getTime();--%>
+        <%--}--%>
     </script>
 
     <script>
@@ -52,8 +52,7 @@
         <div class="form-inline" style="text-align: center">
             <label for="vcode">验证码：</label>
             <input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="请输入验证码" style="text-align: center"/>
-            <a href="javascript: refreshCode()">
-            <img src="${pageContext.request.contextPath}/checkCode" title="看不清点击刷新" id="vcode"/></a>
+            <img src="${pageContext.request.contextPath}/checkCode" title="看不清点击刷新" id="vcode"/>
         </div>
         <hr/>
         <div class="form-group" style="text-align: center">
@@ -65,7 +64,7 @@
         <button type="button" class="close" data-dismiss="alert">
             <span>xxxx</span>
         </button>
-        <strong>登录失败</strong>
+        <strong>${login_msg}</strong>
     </div>
 </div>
 

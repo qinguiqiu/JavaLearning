@@ -25,6 +25,14 @@
         }
     </style>
 
+    <script>
+        function deleteUser(id) {
+            if(confirm("您确定要删除吗？")){
+                location.href="${pageContext.request.contextPath}/delUserServlet?id="+id;
+            }
+        }
+    </script>
+
 </head>
 <body>
 
@@ -50,8 +58,8 @@
     </div>
 
     <div style="float: right; margin: 5px">
-        <a class="btn btn-default btn-sm" href="add.html" style="background: blue; color: white">添加联系人</a></td>
-        <a class="btn btn-default btn-sm" href="add.html" style="background: blue; color: white">删除选中</a></td>
+        <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/add.jsp" style="background: blue; color: #ffffff">添加联系人</a></td>
+        <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/add.jsp" style="background: blue; color: white">删除选中</a></td>
     </div>
 
     <table border="1" class="table table-bordered table-hover">
@@ -77,12 +85,12 @@
                 <td>${user.address}</td>
                 <td>${user.qq}</td>
                 <td>${user.email}</td>
-                <td><a class="btn btn-default btn-sm" href="update.html">修改</a>&nbsp;
-                    <a class="btn btn-default btn-sm" href="">删除</a></td>
+                <td><a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/findUserServlet?id=${user.id}">修改</a>&nbsp;
+                    <a class="btn btn-default btn-sm" href="javascript:deleteUser(${user.id})">删除</a></td>
             </tr>
         </c:forEach>
         <tr>
-            <td colspan="9" align="center"><a class="btn btn-default btn-sm" href="add.html" style="background: blue; color: white">添加联系人</a></td>
+            <td colspan="9" align="center"><a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/add.jsp" style="background: blue; color: white">添加联系人</a></td>
         </tr>
     </table>
 

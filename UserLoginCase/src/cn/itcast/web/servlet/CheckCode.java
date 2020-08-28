@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -14,6 +15,7 @@ import java.util.Random;
 @WebServlet("/checkCode")
 public class CheckCode extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
 
         int width = 100;
         int height = 50;
@@ -30,11 +32,19 @@ public class CheckCode extends HttpServlet {
         String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789";
         Random ran = new Random();
 
+        String checkcode = "";
+
         for (int i = 1; i <= 4; i++) {
             int index = ran.nextInt(str.length());
             char ch = str.charAt(index);
+            checkcode = checkcode.concat(String.valueOf(ch));
             g.drawString(ch+"",width/5*i,height/2);
         }
+        HttpSession session = request.getSession();
+        session.setAttribute("CHECKCODE_SERVER", checkcode);
+
+        System.out.println(checkcode+"   "+"111");
+
 
         g.setColor(Color.GREEN);
 

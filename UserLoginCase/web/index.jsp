@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -21,6 +22,11 @@
 
 </head>
 <body>
+
+<div>
+  ${user.name},欢迎您！
+</div>
+
 <div align="center">
   <a
     href="${pageContext.request.contextPath}/userListServlet" style="text-align: center; font-size: 25px">查询所有用户信息
