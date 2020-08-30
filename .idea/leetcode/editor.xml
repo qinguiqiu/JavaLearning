@@ -3,51 +3,91 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
-        <entry key="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[173]二叉搜索树迭代器.java">
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[173]二叉搜索树迭代器.java">
           <value>
             <LeetcodeEditor>
-              <option name="path" value="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[173]二叉搜索树迭代器.java" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[173]二叉搜索树迭代器.java" />
               <option name="questionId" value="173" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[177]第N高的薪水.java">
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[177]第N高的薪水.java">
           <value>
             <LeetcodeEditor>
-              <option name="path" value="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[177]第N高的薪水.java" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[177]第N高的薪水.java" />
               <option name="questionId" value="177" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[180]连续出现的数字.java">
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[180]连续出现的数字.java">
           <value>
             <LeetcodeEditor>
-              <option name="path" value="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[180]连续出现的数字.java" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[180]连续出现的数字.java" />
               <option name="questionId" value="180" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[332]重新安排行程.java">
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[332]重新安排行程.java">
           <value>
             <LeetcodeEditor>
-              <option name="path" value="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[332]重新安排行程.java" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[332]重新安排行程.java" />
               <option name="questionId" value="332" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[847]访问所有节点的最短路径.java">
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[847]访问所有节点的最短路径.java">
           <value>
             <LeetcodeEditor>
-              <option name="path" value="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[847]访问所有节点的最短路径.java" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[847]访问所有节点的最短路径.java" />
               <option name="questionId" value="877" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[94]二叉树的中序遍历.java">
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[94]二叉树的中序遍历.java">
           <value>
             <LeetcodeEditor>
-              <option name="path" value="$PROJECT_DIR$/../JavaLearning/LeetCode/leetcode/editor/cn/[94]二叉树的中序遍历.java" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/[94]二叉树的中序遍历.java" />
               <option name="questionId" value="94" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[129]求根到叶子节点数字之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[129]求根到叶子节点数字之和.java" />
+              <option name="questionId" value="129" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[130]被围绕的区域.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[130]被围绕的区域.java" />
+              <option name="questionId" value="130" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[62]不同路径.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[62]不同路径.java" />
+              <option name="questionId" value="62" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[63]不同路径 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[63]不同路径 II.java" />
+              <option name="questionId" value="63" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[64]最小路径和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../basic-code/LeetCode/leetcode/editor/cn/[64]最小路径和.java" />
+              <option name="questionId" value="64" />
             </LeetcodeEditor>
           </value>
         </entry>

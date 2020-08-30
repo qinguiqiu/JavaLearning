@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
-@WebFilter("/*")  ///*访问所有的资源都会被拦截执行
+//@WebFilter("/*")  ///*访问所有的资源都会被拦截执行
 public class Demo1 implements Filter {
 
     @Override
