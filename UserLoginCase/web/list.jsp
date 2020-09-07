@@ -31,6 +31,12 @@
                 location.href="${pageContext.request.contextPath}/delUserServlet?id="+id;
             }
         }
+
+        window.onload = function(){
+            document.getElementById("delServleted").onclick = function(){
+                document.getElementById("form").submit();
+            }
+        }
     </script>
 
 </head>
@@ -59,10 +65,11 @@
 
     <div style="float: right; margin: 5px">
         <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/add.jsp" style="background: blue; color: #ffffff">添加联系人</a></td>
-        <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/add.jsp" style="background: blue; color: white">删除选中</a></td>
+        <a class="btn btn-default btn-sm" href="javascript:void(0);" id="delServleted" style="background: #0000ff; color: #ffffff">删除选中</a></td>
     </div>
 
-    <table border="1" class="table table-bordered table-hover">
+    <form id="form" action="${pageContext.request.contextPath}/delUserServlet" method="post">
+        <table border="1" class="table table-bordered table-hover">
         <tr class="success">
             <th><input type="checkbox"></th>
             <th>编号</th>
@@ -77,7 +84,7 @@
 
         <c:forEach items="${users}" var="user" varStatus="s">
             <tr>
-                <th><input type="checkbox"></th>
+                <th><input type="checkbox" name="uid"></th>
                 <td>${s.count}</td>
                 <td>${user.name}</td>
                 <td>${user.gender}</td>
@@ -93,6 +100,7 @@
             <td colspan="9" align="center"><a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/add.jsp" style="background: blue; color: white">添加联系人</a></td>
         </tr>
     </table>
+    </form>
 
     <div>
         <nav aria-label="Page navigation">
