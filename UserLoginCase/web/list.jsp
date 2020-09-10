@@ -32,11 +32,32 @@
             }
         }
 
+        //删除选中
         window.onload = function(){
             document.getElementById("delServleted").onclick = function(){
-                document.getElementById("form").submit();
+                if (confirm("您确定要删除选中条目吗？")){
+                    var flag = false;
+                    var cbs = document.getElementsByName("uid");
+                    for (var i = 0; i < cbs.length; i++){
+                        if (cbs[i].checked){
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (flag){
+                        document.getElementById("form").submit();
+                    }
+                }
+            }
+
+            document.getElementById("firstCb").onclick = function () {
+                var cbs = document.getElementsByName("uid");
+                for (var i = 0; i < cbs.length; i++){
+                    cbs[i].checked = this.checked;
+                }
             }
         }
+
     </script>
 
 </head>
@@ -65,13 +86,13 @@
 
     <div style="float: right; margin: 5px">
         <a class="btn btn-default btn-sm" href="${pageContext.request.contextPath}/add.jsp" style="background: blue; color: #ffffff">添加联系人</a></td>
-        <a class="btn btn-default btn-sm" href="javascript:void(0);" id="delServleted" style="background: #0000ff; color: #ffffff">删除选中</a></td>
+        <a class="btn btn-default btn-sm" href="javascript:void(0);" id="delServleted" style="background: blue; color: #ffffff">删除选中</a></td>
     </div>
 
-    <form id="form" action="${pageContext.request.contextPath}/delUserServlet" method="post">
+    <form id="form" action="${pageContext.request.contextPath}/delSelectedServlet" method="post">
         <table border="1" class="table table-bordered table-hover">
         <tr class="success">
-            <th><input type="checkbox"></th>
+            <th><input type="checkbox" id="firstCb"></th>
             <th>编号</th>
             <th>姓名</th>
             <th>性别</th>
@@ -84,7 +105,7 @@
 
         <c:forEach items="${users}" var="user" varStatus="s">
             <tr>
-                <th><input type="checkbox" name="uid"></th>
+                <th><input type="checkbox" name="uid" value="${user.id}"></th>
                 <td>${s.count}</td>
                 <td>${user.name}</td>
                 <td>${user.gender}</td>
