@@ -29,7 +29,7 @@
 
 <div align="center">
   <a
-    href="${pageContext.request.contextPath}/userListServlet" style="text-align: center; font-size: 25px">查询所有用户信息
+    href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=1&rows=5" style="text-align: center; font-size: 25px">查询所有用户信息
   </a>
 </div>
 </body>
